@@ -1,0 +1,78 @@
+// guide__content.scss
+$c-border: teal;
+
+.guide__content > h2 {
+  margin-top: 1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: red;
+
+  @extend .md-mxn2;
+  @extend .md-tilt-neg;
+  @extend .lg-mxn2;
+}
+
+.guide__content {
+  margin-right: -2rem;
+  margin-left: -2rem;
+  blockquote {
+    font-size: 1.5em;
+    line-height: 1.4;
+    display: block;
+    margin: -0.5rem 0 1rem;
+    padding: 0.5rem 2rem 0;
+    transform: rotate(-1deg);
+    border-color: rgba( $c-border, 0.5 );
+    border-top: 2px solid $c-border;
+    border-bottom: 1px solid $c-border;
+    p {
+      font-size: 0.8em;
+      margin-bottom: 0;
+      padding: 0 0 0.85rem;
+      &:last-child {
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+  p,
+  h2,
+  h3 {
+    clear: both;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  p {
+    font-size: 17px;
+    margin-right: auto;
+    margin-left: auto;
+    transform: rotate(0deg);
+    // max-width: 34em;
+    @media (min-width:$break-md) {
+      width: 75%;
+    }
+  }
+  figure + p {
+    padding-top: 0.5rem;
+  }
+  p + h2,
+  figure + h2 {
+    padding-top: 2rem;
+  }
+  figure > img {
+    margin-right: auto;
+    margin-left: auto;
+    border: 8px solid #ffffff;
+    border-color: rgba(255,255,255,0.5);
+  }
+  a:link,
+  a {
+    text-decoration: underline;
+    color: red;
+  }
+  a:visited,
+  a:focus,
+  a:hover,
+  a:active {
+    color: green;
+  }
+}

@@ -1,0 +1,32 @@
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+  font-size: 0.8em;
+  padding: 1em 0 3em;
+  a {
+    text-decoration: none;
+  }
+}
+.colophon a {
+  padding-left: 0.25em;
+  color: white;
+  &:hover {
+    color: red;
+  }
+}
+.colophon li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.colophon ul {
+  float: right;
+  list-style: none;
+}
+.copyright a {
+  padding-left: 0.25em;
+  color: red;
+  &:hover {
+    color: yellow;
+  }
+}

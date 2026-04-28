@@ -1,0 +1,38 @@
+/* Effects
+-------------------------------------------------- */
+
+.textshadow .blur {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.tilt {
+  transform: rotate(3deg);
+}
+.tilt-neg {
+  transform: rotate(-3deg);
+}
+
+@media screen and (min-width: $break-sm) {
+  .sm-tilt {
+    transform: rotate(3deg);
+  }
+  .sm-tilt-neg {
+    transform: rotate(-3deg);
+  }
+}
+@media screen and (min-width: $break-md) {
+  .md-tilt {
+    transform: rotate(3deg);
+  }
+  .md-tilt-neg {
+    transform: rotate(-3deg);
+  }
+}
+@media screen and (min-width: $break-lg) {
+  .lg-tilt {
+    transform: rotate(3deg);
+  }
+  .lg-tilt-neg {
+    transform: rotate(-3deg);
+  }
+}

@@ -1,0 +1,38 @@
+
+/* Next/Prev nav
+-------------------------------------------------- */
+.nextprev {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1em 0;
+  // line-height: 1.618;
+  &, abbr {
+    line-height: 1rem;
+    // line-height: 1.618;
+  }
+}
+.nextprev a {
+  border: 0;
+  margin-bottom: 1.618em;
+}
+.nextprev .prev {
+  float: left;
+}
+.nextprev .next {
+  float: right;
+}
+
+@media screen and (min-width: $break-sm) {
+  .nextprev {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    abbr {
+      margin: 0 1rem; 
+    }
+  }
+
+}
+.nextprev a:focus,
+.nextprev a:hover {
+  color: red;
+}
